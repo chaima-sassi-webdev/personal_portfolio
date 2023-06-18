@@ -80,15 +80,15 @@ export const Newsletter = ({ status, message, onValidated }) => {
              
               <div>
               <Circle backgroundImage={local} />
-              <p>01 rue Yassmine, <br/> Zeramdine</p>
+              <p style={{color:"gray", marginLeft:"18px"}}>01 rue Yassmine, <br/> Zeramdine</p>
               </div>
               <div>
               <Circle backgroundImage={phone} />
-              <p> (+216) 56 254 878 </p><br/>
+              <p style={{color:"gray"}}> (+216) 56 254 878 </p><br/>
               </div>
              <div>
              <Circle backgroundImage={mail} />
-             <p> chayma.sassi@yahoo.com</p><br/>
+             <p style={{color:"gray"}}> chayma.sassi@yahoo.com</p><br/>
              </div>
             </Col>
           </Row>

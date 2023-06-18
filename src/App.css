@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+
 /************ Custom Font ************/
 @font-face {
 	font-family: Centra;
@@ -20,6 +22,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -353,11 +356,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
+  margin-top: 15%;
   padding: 0 0 50px 0;
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: linear-gradient(90.21deg, #3c0e2a -5.91%, #1f0f65 111.58%);
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -397,7 +401,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
-  position: relative;
+  /* position: relative; */
   background-color: black;
 }
 .project h2 {
@@ -606,7 +610,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 .newsletter-bx {
-  background: linear-gradient(90.21deg, #f2f3f4 -5.91%, #f8f4ff 111.58%);
+  background: linear-gradient(90.21deg, #e8fafd -5.91%, #d6f4ff 111.58%);
   border-radius: 55px;
   color: #121212;
   padding: 25px;
@@ -674,4 +678,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+/********************** Education css ***********************/
+#education {
+  padding-Top: 8%; 
+  margin-bottom: 55px;
+  padding-bottom: 55px;
+  background: linear-gradient(#2b2361, #ca91e5);
+}
+#education h2 {
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 55px;
+  font-weight: 700;
+  font-size: 40px;
+}
+.vertical-timeline-element-title{
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #6f2d7b
+}
+#education p{
+  color:  #4a3a8e
 }

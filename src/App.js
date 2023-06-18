@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, {useState, useEffect, useRef } from 'react';
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
@@ -9,17 +9,20 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
-// import {Education} from './components/Education';
+import {Education} from './components/Educations';
+import { FaArrowUp } from 'react-icons/fa';
 const App = () => {
-  
+
   AOS.init();
 
   return (
     <>
+   
      <div className="App">
+    
       <NavBar />
       <Banner />
-      {/* <Education /> */}
+      <Education />
       <Skills />
       <Projects />
       <Contact />
