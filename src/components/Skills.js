@@ -7,6 +7,24 @@ import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import react from "../assets/img/15.PNG";
 import html from "../assets/img/13.PNG";
+import css from "../assets/img/css.PNG";
+import bootstrap from "../assets/img/bootstrap.png";
+import tail from "../assets/img/tail.png";
+import java from "../assets/img/js.png";
+import express from "../assets/img/ex.png";
+import node from "../assets/img/node.png";
+import git from '../assets/img/git.png';
+import github from '../assets/img/github.png';
+import Sass from '../assets/img/sass.png';
+import Postman from '../assets/img/postman.png';
+import Firebase from '../assets/img/firebase.png';
+import Figma from '../assets/img/figma.png';
+import mongo from '../assets/img/mongo.png';
+import cplusplus from '../assets/img/c++.png';
+import laravel from '../assets/img/laravel.png';
+import php from '../assets/img/php.png';
+import Laragon from '../assets/img/laragon.png';
+import 'animate.css';
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -37,39 +55,83 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>With a solid background of technical skills and an unwavering desire to surpass myself, I am ready to put my knowledge in IT development at the service of ambitious and innovative projects.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={html} alt="Image" />
+                                <img src={git} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
+                                <h5>GIT</h5>
+                            </div>
+                            <div className="item">
+                                <img src={github} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
+                                <h5>GITHUB</h5>
+                            </div>
+                            <div className="item">
+                                <img src={html} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
                                 <h5>HTML</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={css} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
                                 <h5>CSS</h5>
                             </div>
                             <div className="item">
-                                <img src={react} style={{height:"155px", width:"150px"}} alt="Image" />
-                                <h5>ReactJS</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Bootstrap</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={tail} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
                                 <h5>TailwindCss</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={Sass} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
+                                <h5>Sass</h5>
+                            </div>
+                            <div className="item ">
+                                <img src={bootstrap} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
+                                <h5 className="animate__animated animate__bounce">Bootstrap</h5>
+                            </div>
+                            <div className="item">
+                                <img src={react} style={{height:"110px", width:"150px"}} alt="Image" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
+                                <h5>ReactJS</h5>
+                            </div>
+                            <div className="item">
+                                <img src={cplusplus} style={{height:"110px", width:"150px"}} alt="Image" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
+                                <h5>C++</h5>
+                            </div>
+                            <div className="item">
+                                <img src={Figma} style={{height:"110px", width:"130px"}} alt="Image" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
+                                <h5>Figma</h5>
+                            </div>
+                            <div className="item">
+                                <img src={java} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
                                 <h5>JavaScript</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src="https://www.jellyfishtechnologies.com/assets/img/alltechnologies/expressjs.webp" alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
                                 <h5>ExpressJs</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={node} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
                                 <h5>NodeJs</h5>
+                            </div>
+                            <div className="item">
+                                <img src={laravel} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
+                                <h5>Laravel</h5>
+                            </div>
+                            <div className="item">
+                                <img src={php} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
+                                <h5>PHP</h5>
+                            </div>
+                            <div className="item">
+                                <img src={mongo} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
+                                <h5>MongoDB</h5>
+                            </div>
+                            <div className="item">
+                                <img src={Firebase} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
+                                <h5>Firebase</h5>
+                            </div>
+                            <div className="item">
+                                <img src={Laragon} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
+                                <h5>Laragon</h5>
+                            </div>
+                            <div className="item">
+                                <img src={Postman} alt="Image" style={{height:"110px", width:"150px"}} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" />
+                                <h5>Postman</h5>
                             </div>
                         </Carousel>
                     </div>

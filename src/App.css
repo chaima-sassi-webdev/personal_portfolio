@@ -90,9 +90,18 @@ nav.navbar {
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
-nav.navbar.scrolled {
+nav.navbar.scrolled{
   padding: 0px 0;
-  background-color: #121212;
+  /* background-color: black; */
+  background-image:  url("../src/assets/img/starts.jpg");
+  background-blend-mode: multiply;
+  background-color: #121212;;
+  /*  */
+   /* Opacité noire */
+  /*   */
+  /* */
+  height: 120px;
+  /*  */
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -104,10 +113,26 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  position: relative;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
+    color: #ff00ff !important;
+    
+}
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 15px;
+  width: 0px;
+  height: 4px;
+  background-color: #ff00ff; /* Change this to the desired color of the line */
+  transition: width 0.3s ease-in-out;
+}
+.navbar-link:hover::after {
+  width: 80%;
 }
 span.navbar-text {
     display: flex;
@@ -153,7 +178,7 @@ span.navbar-text {
 .navbar-text button {
   font-weight: 700;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid white;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -169,14 +194,18 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: linear-gradient(217deg, rgb(128,0,128), rgba(255,0,0,0) 70.71%),            
+  linear-gradient(127deg, rgb(218,29,129), rgba(0,255,0,0) 70.71%),            
+  linear-gradient(336deg, rgba(255,255,255,255), rgba(0,0,255,0) 70.71%);
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: white ;
+  border: 1px solid #ff00ff;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -231,13 +260,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Banner Css ************/
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/img/starts.jpg');
+  background-color: rgba(176, 176, 176, 0.5);
+  /* rgba(176, 176, 176, 0.5); */
+   /* Opacité noire */
+  background-blend-mode: multiply; 
+  /* Mélange de l'image avec la couleur de fond */
+  opacity: 0.8; 
+  /* Opacité générale de l'élément */
   background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-repeat: repeat;
 }
 /* .banner-canvas {
   position: absolute;
@@ -247,12 +286,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   height: 40%;
 } */
-
+.logo{
+  height: 52px;
+  width: 100px;
+}
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgb(199,21,133) -5.91%, rgba(48, 8, 222, 0.662) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -341,6 +383,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 50%;
   margin: 0 auto 15px auto;
 }
+.skill-slider .item img :hover{
+
+}
 .background-image-left {
   top: 28%;
   position: absolute;
@@ -427,6 +472,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  height: 250px;
+}
+.proj-imgbx img{
+  height: 100%;
+  width: 100%;
 }
 .proj-imgbx::before {
   content: "";
@@ -556,10 +606,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 .newsletter-bx {
-  background: #FFFFFF;
+  background: linear-gradient(90.21deg, #f2f3f4 -5.91%, #f8f4ff 111.58%);
   border-radius: 55px;
   color: #121212;
-  padding: 85px 125px;
+  padding: 25px;
   margin-bottom: 80px;
   margin-top: -122px;
 }
