@@ -11,6 +11,7 @@ import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import {Education} from './components/Educations';
 import { FaArrowUp } from 'react-icons/fa';
+import { Certification } from "./components/certifications";
 const App = () => {
 
   AOS.init();
@@ -25,6 +26,7 @@ const App = () => {
       <Education />
       <Skills />
       <Projects />
+      <Certification />
       <Contact />
       <Footer />
     </div>

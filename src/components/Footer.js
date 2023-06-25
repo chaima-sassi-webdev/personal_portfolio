@@ -4,8 +4,13 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import logo from '../assets/img/chaima.mp4';
+import whats from '../assets/img/whats.png';
 import navIcon4 from "../assets/img/gg.png";
 export const Footer = () => {
+    const numeroTelephone = '56254878'; // Remplacez par votre numéro de téléphone
+    const message = ' '; // Remplacez par votre message prérempli
+
+    const urlWhatsApp = `https://wa.me/${numeroTelephone}?text=${encodeURIComponent(message)}`;
   return (
     <footer className="footer">
       <Container>
@@ -15,11 +20,12 @@ export const Footer = () => {
           <video src={logo} autoPlay loop muted plays-inline style={{ width: '380px', height: '120px'}}  />
           </Col> */}
           <Col size={12} sm={6} className="text-center text-sm-end">
-           <div className="social-icon" style={{display:"flex", position:"absolute", right:"32px"}}>
+           <div className="social-icon" style={{display:"flex", position:"absolute", right:"82px"}}>
               <a href="#"><img src={navIcon1} alt="Icon" /></a>
               <a href="#"><img src={navIcon2} alt="Icon" /></a>
               <a href="#"><img src={navIcon3} alt="Icon" /></a>
-              <a href="https://github.com/chaima-sassi-webdev"><img src={navIcon4} alt="" style={{width:"20px"}}/></a>
+              <a href="https://github.com/chaima-sassi-webdev"><img src={navIcon4} alt="" style={{ width: "20px" }} /></a>
+              <a href={urlWhatsApp} title="whatsapp icônes"> <img src={whats} style={{ width: "20px" }} /></a>
             </div>
             <div style={{ display:"flex"}}>
             <div style={{position:"absolute", left:"32px", top:"96%"}}>

@@ -12,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer"];
+  const toRotate = [ "FullStack Developper"];
   const period = 2000;
  const Top = () => {
   window.scrollTo(0,0);
@@ -132,9 +132,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hello ! I'm `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Tireless explorer and passionate about IT development, I am constantly looking for new knowledge and challenges to feed my curiosity and my creative dynamic.</p>
+                
+                <h1>{`Hello ! I'm `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "FullStack Developer" ]'><span className="wrap">{text}</span></span></h1>
+                                  <p>Tireless explorer and passionate about IT development, I am constantly looking for new knowledge and challenges to feed my curiosity and my creative dynamic. <br/>
+                                      <button className="tagline">Download CV </button></p>
                   <a href='#connect' style={{listStyle:"none",textDecoration:"none"}}>
                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                   </a>
