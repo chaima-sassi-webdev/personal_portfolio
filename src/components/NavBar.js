@@ -5,6 +5,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import navIcon4 from '../assets/img/gg.png';
+import whats from '../assets/img/whats.png';
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -14,7 +15,10 @@ export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+    const numeroTelephone = '56254878'; // Remplacez par votre numéro de téléphone
+    const message = ' '; // Remplacez par votre message prérempli
 
+    const urlWhatsApp = `https://wa.me/${numeroTelephone}?text=${encodeURIComponent(message)}`;
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
@@ -55,7 +59,8 @@ export const NavBar = () => {
                 <a href="https://www.linkedin.com/in/chaima-sassi/"><img src={navIcon1} alt="" /></a>
                 <a href="https://www.facebook.com/profile.php?id=100009247496932"><img src={navIcon2} alt="" /></a>
                 <a href="https://www.instagram.com/chaima_sassi99/"><img src={navIcon3} alt="" /></a>
-                <a href="https://github.com/chaima-sassi-webdev"><img src={navIcon4} alt="" style={{width:"20px"}}/></a>
+                <a href="https://github.com/chaima-sassi-webdev"><img src={navIcon4} alt="" style={{ width: "20px" }} /></a>
+                <a href={urlWhatsApp} title="whatsapp icônes"> <img src={whats} style={{ width: "20px" }}  /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

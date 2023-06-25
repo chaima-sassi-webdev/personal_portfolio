@@ -1,6 +1,6 @@
 import { useState, useEffect , useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/img1.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -12,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer"];
+  const toRotate = [ "FullStack Developper"];
   const period = 2000;
  const Top = () => {
   window.scrollTo(0,0);
@@ -132,9 +132,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hello ! I'm `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Tireless explorer and passionate about IT development, I am constantly looking for new knowledge and challenges to feed my curiosity and my creative dynamic.</p>
+                
+                <h1>{`Hello ! I'm `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "FullStack Developer" ]'><span className="wrap">{text}</span></span></h1>
+                                  <p>Tireless explorer and passionate about IT development, I am constantly looking for new knowledge and challenges to feed my curiosity and my creative dynamic. <br/>
+                                      <button className="tagline">Download CV </button></p>
                   <a href='#connect' style={{listStyle:"none",textDecoration:"none"}}>
                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                   </a>
@@ -145,7 +146,14 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                                  <img src={headerImg} alt="Header Img" style={{
+                                      borderRadius: '50%',
+                                      width: '250px', // Adjust the width and height as needed
+                                      height: '300px',
+                                      marginLeft: '25%',
+                                      marginTop:'-10%'
+                                  }} 
+                                  />
                 </div>}
             </TrackVisibility>
           </Col>

@@ -1,34 +1,37 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/Capture0.PNG";
-import projImg2 from "../assets/img/proj2.PNG";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg2 from "../assets/img/coloc.PNG";
+import projImg3 from "../assets/img/coloooc.PNG";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg4 from "../assets/img/rock.PNG";
+import todo from "../assets/img/toDo.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const Academicprojects = [
+    const Academicprojects = [
+        {
+            title: "Flight_Management",
+            description: "September 03, 2023 - November 01, 2023",
+            imgUrl: "chaima",
+        }, 
     {
       title: "We recruit",
       description: " February 01, 2023 - May 05, 2023",
-      imgUrl: projImg3,
+          imgUrl: projImg3,
     },
     {
       title: "ERP",
       description: "February 15, 2022 - June 15, 2022",
-      imgUrl: projImg2,
+      imgUrl: "chaima",
     }, 
-    {
-      title: "Quiz",
-      description: "February 15, 2022 - June 15, 2022",
-      imgUrl: projImg2,
-    }, 
+   
     {
       title: "E-Commerce App",
       description: "February 15, 2022 - June 15, 2022",
-      imgUrl: projImg2,
+      imgUrl: "chaima",
     }, 
   ];
   const Personnelprojects = [
@@ -40,25 +43,25 @@ export const Projects = () => {
     
     {
       title: "ToDo App",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      //description: "Design & Development",
+      imgUrl: todo,
     },
     {
       title: "Rock Paper Scissors",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      //description: "Design & Development",
+        imgUrl: projImg4,
     },
     {
       title: "Calculator",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      //description: "Design & Development",
+      imgUrl: "chaima",
     },
   ];
   const InternShiprojects = [
     {
       title: "ERP",
       description: "February 15, 2022 - June 15, 2022",
-      imgUrl: projImg2,
+          imgUrl: projImg3
     },
     {
       title: "ColocTunisie",
@@ -79,13 +82,13 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Academic Project</Nav.Link>
+                      <Nav.Link eventKey="first">Web development</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Personal Project</Nav.Link>
+                      <Nav.Link eventKey="second">Mobile development</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">InternShip's Project</Nav.Link>
+                      <Nav.Link eventKey="third">Design UI/UX</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -104,31 +107,13 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                    <Row>
-                        {
-                          Personnelprojects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
+                      <Row>
+                         <p style={{ textAlign: "center" }}>In progress</p>
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                    <Row>
-                        {
-                          InternShiprojects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
+                                              <Row>
+                                                  <p style={{ textAlign: "center" }}>In progress</p>
                       </Row>
                     </Tab.Pane>
                   </Tab.Content>
