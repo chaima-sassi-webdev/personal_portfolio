@@ -26,7 +26,7 @@ export const Projects = () => {
       title: "ERP",
       description: "February 15, 2022 - June 15, 2022",
       imgUrl: "chaima",
-    }, 
+    },
    
     {
       title: "E-Commerce App",
