@@ -6,6 +6,8 @@ import projImg3 from "../assets/img/coloooc.PNG";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg4 from "../assets/img/rock.PNG";
 import todo from "../assets/img/toDo.png";
+import Flight from "../assets/img/stage_tunisair.png";
+import ERP from "../assets/img/erp.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -15,7 +17,7 @@ export const Projects = () => {
         {
             title: "Flight_Management",
             description: "September 03, 2023 - November 01, 2023",
-            imgUrl: "chaima",
+            imgUrl: Flight,
         }, 
     {
       title: "We recruit",
@@ -25,7 +27,7 @@ export const Projects = () => {
     {
       title: "ERP",
       description: "February 15, 2022 - June 15, 2022",
-      imgUrl: "chaima",
+      imgUrl: ERP,
     },
    
     {
@@ -33,41 +35,6 @@ export const Projects = () => {
       description: "February 15, 2022 - June 15, 2022",
       imgUrl: "chaima",
     }, 
-  ];
-  const Personnelprojects = [
-    {
-      title: "ScopeEvent",
-      description: "1 February, 2023 - 3 april , 2023",
-      imgUrl: projImg1,
-    },
-    
-    {
-      title: "ToDo App",
-      //description: "Design & Development",
-      imgUrl: todo,
-    },
-    {
-      title: "Rock Paper Scissors",
-      //description: "Design & Development",
-        imgUrl: projImg4,
-    },
-    {
-      title: "Calculator",
-      //description: "Design & Development",
-      imgUrl: "chaima",
-    },
-  ];
-  const InternShiprojects = [
-    {
-      title: "ERP",
-      description: "February 15, 2022 - June 15, 2022",
-          imgUrl: projImg3
-    },
-    {
-      title: "ColocTunisie",
-      description: "01 July 2021- 31 September 2021",
-      imgUrl: projImg2,
-    },  
   ];
   return (
     <section className="project" id="projects">
